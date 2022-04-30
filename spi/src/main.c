@@ -19,8 +19,8 @@ int main (void) {
 	while (1) {
 	    SPI2_Tx('A');			//0x41	0b01000001
 	    SPI2_Tx('9');			//0x39	0b00111001 
-		SPI2_Tx(255);			//0xFF	0b11111111	   
-	    SPI2_Tx(0b10101010);	//0xAA	0b10101010
+	    SPI2_Tx(255);			//0xFF	0b11111111	   
+	    SPI2_Tx(0b10101010);		//0xAA	0b10101010
 	}
 	// Return 0 to satisfy compiler
 	return 0;
