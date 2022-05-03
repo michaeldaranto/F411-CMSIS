@@ -8,6 +8,3 @@ So the credits must go to :
 https://embeddedexpert.io/
 
 https://dk7ih.de/
-
-
-Michael Daranto - YD3BRB
