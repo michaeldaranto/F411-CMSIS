@@ -46,8 +46,8 @@ void GPIOC_Init (void) {
 	GPIOC->MODER&=~GPIO_MODER_MODE13_1;
 }
 void TIM2_IRQHandler(void) {
-    // Clear UIF bit
+    	// Clear UIF bit
 	TIM2->SR &=~TIM_SR_UIF;
 	// Toggle LED	
-    GPIOC->ODR ^=GPIO_ODR_OD13; 
+   	GPIOC->ODR ^=GPIO_ODR_OD13; 
 }
