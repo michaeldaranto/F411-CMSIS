@@ -63,9 +63,9 @@ void DMA1_Stream4_Init(void){
 	while((DMA1_Stream4->CR) & DMA_SxCR_EN){}	
 	// Configuration Register 
 	DMA1_Stream4->CR &=~DMA_SxCR_CHSEL;		// CH 0
-	DMA1_Stream4->CR = 	DMA_SxCR_MINC|		// Memory Increment mode
-						DMA_SxCR_DIR_0|		// Memory to peripheral	
-						DMA_SxCR_TCIE;		// Transfer complete interrupt enable
+	DMA1_Stream4->CR = DMA_SxCR_MINC|		// Memory Increment mode
+				DMA_SxCR_DIR_0|		// Memory to peripheral	
+				DMA_SxCR_TCIE;		// Transfer complete interrupt enable
 						
 	// Direct mode disabled
 	DMA1_Stream4->FCR &=~DMA_SxFCR_DMDIS;
