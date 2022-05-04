@@ -16,7 +16,7 @@ __disable_irq();
 	// Turn on the GPIOC peripheral
 	RCC->AHB1ENR |= RCC_AHB1ENR_GPIOCEN;
 
-    // Set GPIOC Pin13 Output
+    	// Set GPIOC Pin13 Output
 	GPIOC->MODER|= GPIO_MODER_MODE13_0;
 	GPIOC->MODER&=~GPIO_MODER_MODE13_1;
 
