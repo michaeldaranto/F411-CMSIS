@@ -67,6 +67,9 @@ void USART1_Init(void){
 	USART1->BRR &=~USART_BRR_DIV_Fraction;
 	USART1->BRR|=(3 << USART_BRR_DIV_Fraction_Pos);
 	
+	// Enable DMA
+	USART1->CR3|= USART_CR3_DMAT;
+	
 	// USART1 Enable
 	USART1->CR1|= USART_CR1_UE;				
 }
